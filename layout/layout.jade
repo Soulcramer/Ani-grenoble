@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+	head
+		title= siteName
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==", crossorigin="anonymous")
+		style!= css
+
+
+	body
+		header
+			.navbar.navbar-default
+				.container
+					button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-collapse")
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a(class="navbar-brand", href="/")= siteName
+					.navbar-collapse.collapse
+						ul.nav.navbar-nav.navbar-right
+							li
+								a(href="#") Qui sommes nous?
+							li
+								a(href="#") Où nous trouver
+							li.dropdown
+								a(href="#",class="dropdown-toggle",data-toggle="dropdown") Activitées
+									b.carret
+								ul.dropdown-menu
+									li.dropdown-header
+										a(href="#")
+											h4.text-primary Reunion hebdomadaire
+									li
+										a(href="#") Première partie
+									li
+										a(href="#") Second partie
+									li.dropdown-header
+										a(href="#")
+											h4.text-primary Soirées Spéciales
+									li
+										a(href="#") Pokémon
+									li
+										a(href="#") Jeux Vidéo 128bits
+									li.dropdown-header
+										a(href="#")
+											h4.text-primary Conventions
+									li
+										a(href="#") Japan Expo Sud
+									li
+										a(href="#") Japan Touch
+								li
+									a(href="#") Contact
+		section#content!= content
+		footer
+			.navbar.navbar-inverse.navbar-fixed-bottom
+				.container-fluid
+					.navbar-text.pull-left
+						if user
+							a(href="#") Déconnexion
+						else
+							a(href="#") Connexion
+					.navbar-text.pull-right
+						a(href="https://www.facebook.com/groups/226434010895190/", target="_blank") Page Facebook							
+		script!= js
+		script(src="/bootstrap/js/bootstrap.min.js")
