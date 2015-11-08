@@ -1,0 +1,12 @@
+{
+    "name": "ani-grenoble.fr",
+    "repository": "heroku/aerotry",
+    "version": "0.0.1",
+    "dependencies": {
+        "aero": "*"
+    },
+    "author": {
+        "name": "Scott Rayapoullé",
+        "email": "scott.rayapoullé@gmail.com"
+    }
+}
