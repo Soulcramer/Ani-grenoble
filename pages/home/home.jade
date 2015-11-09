@@ -2,3 +2,69 @@
 	.container
 		.text-center
 			img(src="images/logo_ANIGRENOBLE2.png", alt="logo_ANIGRENOBLE2.png", class="center-block img-responsive")
+		div(id="mycarousel", class="carousel slide", data-ride="carousel", data-interval="5000")
+			ol.carousel-indicators
+				li(data-target="#mycarousel" data-slide-to="0" class="active")
+				li(data-target="#mycarousel", data-slide-to="1")
+				li(data-target="#mycarousel", data-slide-to="2")
+				li(data-target="#mycarousel", data-slide-to="3")
+				li(data-target="#mycarousel", data-slide-to="4")
+				li(data-target="#mycarousel", data-slide-to="5")
+			div.carousel-inner
+				div.item.active
+					img(src="images/carousel/no_game_no_life_sora_car.png", alt="no_game_no_life_sora_car.png")
+					div.carousel-caption
+						h2.bg-primary Animes
+				div.item
+					img(src="images/carousel/arslan_senki_car.png", alt="arslan_senki_car.png")
+					div.carousel-caption
+						h2.bg-primary Animes
+				div.item
+					img(src="images/carousel/kaneki_ken1_car.png", alt="kaneki_ken1_car.png")
+					div.carousel-caption
+						h2.bg-primary Animes
+				div.item
+					img(src="images/carousel/FMA_car.png", alt="FMA_car.png")
+					div.carousel-caption
+						h2.bg-primary Animes
+				div.item
+					img(src="images/carousel/SNK_car.png", alt="SNK_car.png")
+					div.carousel-caption
+						h2.bg-primary Animes
+				div.item
+					img(src="images/carousel/SAO_car.png", alt="SAO_car.png")
+					div.carousel-caption
+						h2.bg-primary Animes
+
+
+			a(class="left carousel-control", href="#mycarousel", role="button", data-slide="prev")
+				span.glyphicon.glyphicon-chevron-left
+			a(class="right carousel-control", href="#mycarousel", role="button", data-slide="next")
+				span.glyphicon.glyphicon-chevron-right
+#bas
+	.container
+		br
+		if user
+			.text-center
+				h3= user.name
+				p= user.description
+				a(href="./article.php?Option=add", class="btn btn-primary btn-lg btn-block", role="button")
+					span(class="glyphicon glyphicon-plus", aria-hidden="true") 
+					|  Ajouter un article
+			br
+			-var count = 0
+			each article in articles
+				if count == 0 || count[3]==0
+					.row
+				.col-sm-6.col-md-4
+					.thumbnail
+						a(href='"./index.php?ref='+article.ref+'&categorie='+article.categorie+'"')
+							img(src="/images/articles/defaultimg.jpg")
+						.caption
+							h4='Le '+article.date
+							p=article.text
+							h4
+								small='Ecrit par '+article.author
+				- count++
+				if count == 0 || count[3]==0
+					.row

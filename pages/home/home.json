@@ -1,3 +1,44 @@
 {
-    "url": ""
+	"url": "",
+	"user": {
+			"name": "Scott",
+			"description": "Maitre"
+		},
+		"articles": [
+			{
+				"ref":"1",
+				"categorie":"séance hebdomadaire",
+				"date": "04-11-2015",
+				"text": "Visionnage de Gatchaman Crowds Episode 1 et One Punch Man Episode 4. Blindtest musiques 2015 puis nouveau jeu d'images \"Quizz images minimalistes\". ",
+				"author": "Maxime"
+			},
+			{
+				"ref":"1",
+				"categorie":"séance hebdomadaire",
+				"date": "21-10-2015",
+				"text": "Visionnage de Moyashimon et de One punch man suivie par un BlindTest de 100 musiques en finissant par un quizz image. ",
+				"author": "Scott"
+			},
+			{
+				"ref":"1",
+				"categorie":"séance hebdomadaire",
+				"date": "14-10-2015",
+				"text": "La séance a débutée à 17h30 à la résidence Berlioz sur le campus en commençant par le visionnage de Mobile Suit Gundam: Iron-Blooded Orphans et de Beautiful Bones suivie par un BlindTest de 100 musiques en finissant par un quizz image. ",
+				"author": "Scott"
+			},
+			{
+				"ref":"1",
+				"categorie":"séance hebdomadaire",
+				"date": "07-10-2015",
+				"text": "Suite à un imprévu nous avons du faire notre séance à la salle télé de la résidence universitaire Berlioz et avons du commencé la séance vers 18h20.Nous avons visionnés le premier épisode du reboot de Lupin III: \"Lupin III (2015)\" et suite au retard pris nous avons décidés de ne pas diffuser de second épisode. Nous avons continué la séance par un BlindTest où cette fois-ci les musiques étaient des covers anglaise des opening, ending, ost de 30/35 covers; ensuite nous avons fait un quizz image suivie d'un quizz police. Nous avons terminés la séance par un blindtest musicale mais cette fois-ci exceptionnellement, c'est Maxime Garcia qui nous a joué les musiques!",
+				"author": "Scott"
+			},
+			{
+				"ref":"1",
+				"categorie":"séance hebdomadaire",
+				"date": "30-09-2015",
+				"text": "Visionnage de Jitsu wa watashi wa … et de Ergo Proxy suivie par un BlindTest de 100 musiques et nous avons terminé par une présentation de l'association aux nouveaux arrivants. ",
+				"author": "Scott"
+			}
+		]
 }
