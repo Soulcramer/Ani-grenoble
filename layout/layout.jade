@@ -52,13 +52,13 @@ html(lang="en")
 									a(href="#") Contact
 		section#content!= content
 		footer
-			.navbar.navbar-inverse.navbar-static-bottom
+			.navbar.navbar-inverse.navbar-fixed-bottom
 				.container-fluid
 					.navbar-text.pull-left
 						if user
 							a(href="#") Déconnexion
 						else
-							a(href="#") Connexion
+							a(href="/login") Connexion
 					.navbar-text.pull-right
 						a(href="https://www.facebook.com/groups/226434010895190/", target="_blank") Page Facebook							
 		script!= js

@@ -3,10 +3,17 @@
     "repository": "heroku/aerotry",
     "version": "0.0.1",
     "dependencies": {
-        "aero": "*"
+        "aero": "*",
+        "sqlite3": "*"
     },
+    "repository":{
+      "type": "git",
+      "url": "https://github.com/Soulcramer/Ani-grenoble"
+    },
+    "description": "Ani Grenoble presentation website",
+    "license": "GPL-3.0",
     "author": {
         "name": "Scott Rayapoullé",
-        "email": "scott.rayapoullé@gmail.com"
+        "email": "scott.rayapoulle@gmail.com"
     }
 }
