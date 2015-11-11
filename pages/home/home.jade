@@ -48,7 +48,7 @@
 			.text-center
 				h3= user.name
 				p= user.description
-				a(href="./article.php?Option=add", class="btn btn-primary btn-lg btn-block", role="button")
+				a(href="/article/#id/add", class="btn btn-primary btn-lg btn-block", role="button")
 					span(class="glyphicon glyphicon-plus", aria-hidden="true") 
 					|  Ajouter un article
 			br
@@ -58,8 +58,8 @@
 					.row
 				.col-sm-6.col-md-4
 					.thumbnail
-						a(href='"./index.php?ref='+article.ref+'&categorie='+article.categorie+'"')
-							img(src="/images/articles/defaultimg.jpg")
+						a(href='/article/'+article.ref+'')
+							img(src="/images/articles/defaultimg.jpg", alt="image de l'article")
 						.caption
 							h4='Le '+article.date
 							p=article.text

@@ -3,8 +3,7 @@
     "repository": "heroku/aerotry",
     "version": "0.0.1",
     "dependencies": {
-        "aero": "*",
-        "sqlite3": "*"
+        "aero": "*"
     },
     "repository":{
       "type": "git",
