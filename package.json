@@ -3,7 +3,10 @@
     "repository": "heroku/aerotry",
     "version": "0.0.1",
     "dependencies": {
-        "aero": "*"
+        "aero": "*",
+        "sqlite3":"*",
+        "nodemailer":"*",
+        "email-validator":"1.0.3"
     },
     "repository":{
       "type": "git",

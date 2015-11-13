@@ -12,7 +12,7 @@
 		"cert": ""
 	},
 	"static": [
-		"boostrap",
+		"bootstrap",
 		"images"
 	],
 	"styles": [],

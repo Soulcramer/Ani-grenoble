@@ -11,6 +11,7 @@ module.exports = {
   },
   post: function(request, response) {
     console.log(request.body.username);
+    //if(request.body.username==users)
     response.render({
       user: {
         name: request.body.username,
