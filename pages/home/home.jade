@@ -44,6 +44,7 @@
 #bas
 	.container
 		br
+		
 		if user
 			.text-center
 				h3= user.name
@@ -54,17 +55,17 @@
 			br
 			-var count = 0
 			each article in articles
-				if count == 0 || count[3]==0
+				if count == 0 || count % 3 === 0
 					.row
 				.col-sm-6.col-md-4
 					.thumbnail
 						a(href='/article/'+article.ref+'')
 							img(src="/images/articles/defaultimg.jpg", alt="image de l'article")
 						.caption
-							h4='Le '+article.date
-							p=article.text
+							h4='Le '+article.datePublication
+							p=article.contenue
 							h4
-								small='Ecrit par '+article.author
+								small='Ecrit par '+article.auteur
 				- count++
-				if count == 0 || count[3]==0
+				if count == 0 || count % 3 === 0
 					.row

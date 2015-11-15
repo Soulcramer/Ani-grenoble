@@ -7,17 +7,10 @@
 		"scripts": "scripts",
 		"security": "security"
 	},
-	"security": {
-		"key": "",
-		"cert": ""
-	},
 	"static": [
 		"bootstrap",
 		"images"
 	],
-	"styles": [],
-	"scripts": [],
-	"fonts": [],
 	"plugins": {
 		"jquery": {}
 	},

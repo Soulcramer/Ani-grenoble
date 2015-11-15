@@ -1,7 +1,5 @@
-module.exports = {
-    get: function(request, response) {
-        response.render({
-            myJadeParameter: 'Hello World'
-        })
-    }
+exports.get = function(request, response) {
+  response.render({
+    myJadeParameter: 'Hello World'
+  })
 }

@@ -3,13 +3,7 @@
 
 module.exports = {
   get: function(request, response) {
-    response.render({
-      user: {
-        name: "scott",
-        pass: "pacat"
-      }
-    })
-
+    response.render()
   },
   post: function(request, response) {
 
