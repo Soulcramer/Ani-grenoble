@@ -1,21 +1,24 @@
 {
-    "name": "ani-grenoble.fr",
-    "repository": "heroku/aerotry",
-    "version": "0.0.1",
-    "dependencies": {
-        "aero": "*",
-        "sqlite3":"*",
-        "nodemailer":"*",
-        "email-validator":"1.0.3"
-    },
-    "repository":{
-      "type": "git",
-      "url": "https://github.com/Soulcramer/Ani-grenoble"
-    },
-    "description": "Ani Grenoble presentation website",
-    "license": "GPL-3.0",
-    "author": {
-        "name": "Scott Rayapoullé",
-        "email": "scott.rayapoulle@gmail.com"
-    }
+  "name": "ani-grenoble.fr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Soulcramer/Ani-grenoble"
+  },
+  "version": "0.0.1",
+  "dependencies": {
+    "aero": "*",
+    "body-parser": "^1.14.1",
+    "email-validator": "1.0.3",
+    "express-session": "^1.12.1",
+    "nodemailer": "1.10.0",
+    "passport": "^0.3.2",
+    "passport-local": "1.0.0",
+    "sqlite3": "*"
+  },
+  "description": "Ani Grenoble presentation website",
+  "license": "GPL-3.0",
+  "author": {
+    "name": "Scott Rayapoullé",
+    "email": "scott.rayapoulle@gmail.com"
+  }
 }

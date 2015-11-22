@@ -18,23 +18,23 @@
 				div.item
 					img(src="images/carousel/arslan_senki_car.png", alt="arslan_senki_car.png")
 					div.carousel-caption
-						h2.bg-primary Animes
+						h2.bg-primary Mangas
 				div.item
 					img(src="images/carousel/kaneki_ken1_car.png", alt="kaneki_ken1_car.png")
 					div.carousel-caption
-						h2.bg-primary Animes
+						h2.bg-primary Conventions
 				div.item
 					img(src="images/carousel/FMA_car.png", alt="FMA_car.png")
 					div.carousel-caption
-						h2.bg-primary Animes
+						h2.bg-primary Soirées spéciales
 				div.item
 					img(src="images/carousel/SNK_car.png", alt="SNK_car.png")
 					div.carousel-caption
-						h2.bg-primary Animes
+						h2.bg-primary Présentations/Exposés
 				div.item
 					img(src="images/carousel/SAO_car.png", alt="SAO_car.png")
 					div.carousel-caption
-						h2.bg-primary Animes
+						h2.bg-primary Cosplay
 
 
 			a(class="left carousel-control", href="#mycarousel", role="button", data-slide="prev")
@@ -44,7 +44,7 @@
 #bas
 	.container
 		br
-		
+
 		if user
 			.text-center
 				h3= user.name
@@ -53,19 +53,19 @@
 					span(class="glyphicon glyphicon-plus", aria-hidden="true") 
 					|  Ajouter un article
 			br
-			-var count = 0
-			each article in articles
-				if count == 0 || count % 3 === 0
-					.row
-				.col-sm-6.col-md-4
-					.thumbnail
-						a(href='/article/'+article.ref+'')
-							img(src="/images/articles/defaultimg.jpg", alt="image de l'article")
-						.caption
-							h4='Le '+article.datePublication
-							p=article.contenue
-							h4
-								small='Ecrit par '+article.auteur
-				- count++
-				if count == 0 || count % 3 === 0
-					.row
+		-var count = 0
+		each article in articles
+			if count == 0 || count % 3 === 0
+				.row
+			.col-sm-6.col-md-4
+				.thumbnail
+					a(href='/article/'+article.ref+'')
+						img(src="/images/articles/"+article.image+"", alt="image de l'article")
+					.caption
+						h4='Le '+article.datePublication
+						p=article.contenue
+						h4
+							small='Ecrit par '+article.auteur
+			- count++
+			if count == 0 || count % 3 === 0
+				.row
