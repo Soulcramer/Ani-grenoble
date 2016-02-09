@@ -3,8 +3,6 @@ html(lang="en")
 	head
 		title= siteName
 		link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
-
-
 	body
 		header
 			.navbar.navbar-default
@@ -22,30 +20,30 @@ html(lang="en")
 							li
 								a(href="/where") Où nous trouver
 							li.dropdown
-								a(href="#",class="dropdown-toggle",data-toggle="dropdown") Activitées
-									span.carret
+								a(href="/#",class="dropdown-toggle",data-toggle="dropdown") Activitées
+									span.caret
 								ul.dropdown-menu
 									li.dropdown-header
-										a(href="#")
+										a(href="/#")
 											h4.text-primary Reunion hebdomadaire
 									li
-										a(href="#") Première partie
+										a(href="/#") Première partie
 									li
-										a(href="#") Second partie
+										a(href="/#") Second partie
 									li.dropdown-header
-										a(href="#")
+										a(href="/#")
 											h4.text-primary Soirées Spéciales
 									li
-										a(href="#") Pokémon
+										a(href="/#") Pokémon
 									li
-										a(href="#") Jeux Vidéo 128bits
+										a(href="/#") Jeux Vidéo 128bits
 									li.dropdown-header
-										a(href="#")
+										a(href="/#")
 											h4.text-primary Conventions
 									li
-										a(href="#") Japan Expo Sud
+										a(href="/#") Japan Expo Sud
 									li
-										a(href="#") Japan Touch
+										a(href="/#") Japan Touch
 							li
 								a(href="/contact") Contact 
 		section#content!= content
@@ -59,4 +57,5 @@ html(lang="en")
 							a(href="/login") Connexion
 					.navbar-text.pull-right 
 						a(href="https://www.facebook.com/groups/226434010895190/", target="_blank") Page Facebook	
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
 		script(src="/bootstrap/js/bootstrap.min.js")
