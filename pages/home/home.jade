@@ -44,15 +44,7 @@
 #bas
 	.container
 		br
-
-		if user
-			.text-center
-				h3= user.name
-				p= user.description
-				a(href="/article/#id/add", class="btn btn-primary btn-lg btn-block", role="button")
-					span(class="glyphicon glyphicon-plus", aria-hidden="true") 
-					|  Ajouter un article
-			br
+			
 		-var count = 0
 		each article in articles
 			if count == 0 || count % 3 === 0
@@ -62,10 +54,10 @@
 					a(href='/article/'+article.ref+'')
 						img(src="/images/articles/"+article.image+"", alt="image de l'article")
 					.caption
-						h4='Le '+article.datePublication
-						p=article.contenue
+					h4='Le '+ article.date
+					p=article.text
 						h4
-							small='Ecrit par '+article.auteur
+							small='Ecrit par '+article.author
 			- count++
 			if count == 0 || count % 3 === 0
 				.row

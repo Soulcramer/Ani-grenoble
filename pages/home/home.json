@@ -1,3 +1,73 @@
 {
-  "url":"/"
+  "url": "/",
+  "user": {
+    "name": "Scott",
+    "description": "Maitre"
+  },
+  "articles": [{
+    "ref": "1",
+    "categorie": "séance hebdomadaire",
+    "date": "18-11-2015",
+    "text": "Visionnage de Persona 4 The Animation épisode 1 et de One Punch Man épisode 7. Réponse au quizz bonus posté sur le groupe Facebook ici. Quizz images et images minimaliste ainsi que Blindtest. ",
+    "author": "Maxime",
+    "image": "Persona_4_The_Animation.jpg"
+  }, {
+    "ref": "1",
+    "categorie": "séance hebdomadaire",
+    "date": "11-11-2015",
+    "text": "Visionnage de Zettai Karen Children The Unlimited épisode 1 et One Punch Man episode 6. Blindtest et Quizz Images.",
+    "author": "Maxime",
+    "image": "Zettai_Karen_Children_The_Unlimited.jpg"
+  }, {
+    "ref": "1",
+    "categorie": "séance hebdomadaire",
+    "date": "04-11-2015",
+    "text": "Visionnage de Gatchaman Crowds Episode 1 et One Punch Man Episode 4. Blindtest musiques 2015 puis nouveau jeu d'images \"Quizz images minimalistes\". ",
+    "author": "Scott",
+    "image": "Gatcha.jpg"
+  }, {
+    "ref": "1",
+    "categorie": "séance hebdomadaire",
+    "date": "21-10-2015",
+    "text": "Visionnage de Moyashimon et de One punch man suivie par un BlindTest de 100 musiques en finissant par un quizz image. ",
+    "author": "Scott",
+    "image": "Moyashimon.jpg"
+  }, {
+    "ref": "1",
+    "categorie": "séance hebdomadaire",
+    "date": "14-10-2015",
+    "text": "La séance a débutée à 17h30 à la résidence Berlioz sur le campus en commençant par le visionnage de Mobile Suit Gundam: Iron-Blooded Orphans et de Beautiful Bones suivie par un BlindTest de 100 musiques en finissant par un quizz image. ",
+    "author": "Scott",
+    "image": "MSG_IBO.jpg"
+  }, {
+    "ref": "1",
+    "categorie": "séance hebdomadaire",
+    "date": "07-10-2015",
+    "text": "Nous avons visionnés le premier épisode du reboot de Lupin III: \"Lupin III (2015)\". Nous avons continué la séance par un BlindTest avec des covers anglaise des opening, ending, ost de 30/35 covers; ensuite nous avons fait un quizz image ainsi qu'un quizz police. Nous avons terminés la séance par un blindtest musicale mais cette fois-ci exceptionnellement, c'est Maxime qui nous a joué les musiques! ",
+    "author": "Scott",
+    "image": "Lupin-III-2015.jpg"
+  }, {
+    "ref": "1",
+    "categorie": "séance hebdomadaire",
+    "date": "30-09-2015",
+    "text": "Visionnage de Jitsu wa watashi wa … et de Ergo Proxy suivie par un BlindTest de 100 musiques et nous avons terminé par une présentation de l'association aux nouveaux arrivants.",
+    "author": "Scott",
+    "image": "J3W.jpg"
+
+  }, {
+    "ref": "1",
+    "categorie": "séance hebdomadaire",
+    "date": "23-09-2015",
+    "text": "Visionnage du premier épisode de Ore Monogatari et de The Karas suivi d'une présentation sur le studio TypeMoon par le président Matthieu et nous avons terminé la séance par un Blind Test. 9 personnes présentes à cette séance.",
+    "author": "Scott",
+    "image": "OREM.jpg"
+
+  }, {
+    "ref": "1",
+    "categorie": "séance hebdomadaire",
+    "date": "16-09-2015",
+    "text": "Visionnage du premier épisode de One Punch Man suivi d'une présentation sur le manga Saint Seiya par l'ex-Président Tom et nous avons terminé cette séance par un Blind Test ainsi qu'un Quizz Image.",
+    "author": "Scott",
+    "image": "onepunchman.jpg"
+  }]
 }

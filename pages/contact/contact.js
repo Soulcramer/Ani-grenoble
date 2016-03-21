@@ -3,32 +3,39 @@
 
 module.exports = {
   get: function(request, response) {
-    response.render()
-  },
+    response.render({
+      user: {
+        name: "scott",
+        pass: "pacat"
+      }
+    })
+
+  }/*,
   post: function(request, response) {
 
-    if(!request || !request.body ){
+    if(!request || !request.query ){
       // Honeypot for spambots
-      if (request.body.company) {
+      console.log(request.query);
+      if (request.query.company) {
         response.render({
           type: 'empty',
           err: true,
-          message: request.body.message,
-          name: request.body.name,
-          email: request.body.email,
+          message: request.query.message,
+          name: request.query.name,
+          email: request.query.email,
           msg: 'Spam Bot détecté. Le message n\'a pas été envoyé, s\'il vous plaît, contactez-nous par email ou par téléphone',
           description: 'Spam'
         });
       }
 
       // Check if all required fields are filled
-      if (!request.body.name || !request.body.email || !request.body.message) {
+      if (!request.query.name || !request.query.email || !request.query.message) {
         response.render({
           type: 'empty',
           err: true,
-          message: request.body.message,
-          name: request.body.name,
-          email: request.body.email,
+          message: request.query.message,
+          name: request.query.name,
+          email: request.query.email,
           msg: 'Remplissez tous les champs, merci!',
           description: 'L\'e-mail n\'a pas été envoyé avec succès'
         });
@@ -36,14 +43,14 @@ module.exports = {
 
       // Check for valid email
       let validator = require("email-validator");
-      let email_check = validator.validate(request.body.email);
+      let email_check = validator.validate(request.query.email);
       if (email_check == false) {
         response.render({
           type: 'empty',
           err: true,
-          message: request.body.message,
-          name: request.body.name,
-          email: request.body.email,
+          message: request.query.message,
+          name: request.query.name,
+          email: request.query.email,
           msg: 'Entrez une adresse email valide s\'il vous plaît, merci!',
           description: 'L\'e-mail n\'a pas été envoyé avec succès'
         });
@@ -60,11 +67,11 @@ module.exports = {
       });
 
       let mailOptions = {
-        from: request.body.email, // sender address
+        from: request.query.email, // sender address
         to: 'ani.grenoble@gmail.com', // list of receivers
         subject: 'Site internet contact', // Subject line
-        text: 'Nom de l\'envoyeur :' + request.body.name + ' \nEmail de contact :' + request.body.email + "\nMessage : " + request.body.message // plaintext body
-          // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
+        text: 'Nom de l\'envoyeur :' + request.query.name + ' \nEmail de contact :' + request.query.email + "\nMessage : " + request.query.message // plaintext query
+          // html: '<b>Hello world ✔</b>' // You can choose to send an HTML query instead
       };
 
       transporter.sendMail(mailOptions, function(error, info) {
@@ -88,7 +95,7 @@ module.exports = {
       response.render();
 
     }
-    }
+  }*/
 
 
 }

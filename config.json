@@ -1,5 +1,9 @@
 {
-  "siteName": "Aero-AniGrenoble",
+  "title": "Aero-AniGrenoble",
+  "domain": "ani-grenoble.fr",
+  "languages": [
+    "fr"
+  ],
   "path": {
     "pages": "pages",
     "layout": "layout",
