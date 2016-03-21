@@ -27,7 +27,6 @@ module.exports = {
           description: 'Spam'
         });
       }
-
       // Check if all required fields are filled
       if (!request.query.name || !request.query.email || !request.query.message) {
         response.render({
@@ -66,15 +65,13 @@ module.exports = {
         }
       });
 
-      let mailOptions = {
-        from: request.query.email, // sender address
-        to: 'ani.grenoble@gmail.com', // list of receivers
-        subject: 'Site internet contact', // Subject line
-        text: 'Nom de l\'envoyeur :' + request.query.name + ' \nEmail de contact :' + request.query.email + "\nMessage : " + request.query.message // plaintext query
-          // html: '<b>Hello world ✔</b>' // You can choose to send an HTML query instead
-      };
-
-      transporter.sendMail(mailOptions, function(error, info) {
+    let mailOptions = {
+      from: request.body.email, // sender address
+      to: 'ani.grenoble@gmail.com', // list of receivers
+      subject: 'Site internet contact', // Subject line
+      text: 'Nom de l\'envoyeur :' + request.body.name + ' \nEmail de contact :' + request.body.email + "\nMessage : " + request.body.message // plaintext body
+        // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
+    };
 
         // Email not sent
         if (error) {
@@ -93,7 +90,6 @@ module.exports = {
         };
       });
       response.render();
-
     }
   }*/
 

@@ -44,7 +44,6 @@
 #bas
 	.container
 		br
-			
 		-var count = 0
 		each article in articles
 			if count == 0 || count % 3 === 0
@@ -54,8 +53,8 @@
 					a(href='/article/'+article.ref+'')
 						img(src="/images/articles/"+article.image+"", alt="image de l'article")
 					.caption
-					h4='Le '+ article.date
-					p=article.text
+						h4='Le '+article.date
+						p=article.contenue
 						h4
 							small='Ecrit par '+article.author
 			- count++
